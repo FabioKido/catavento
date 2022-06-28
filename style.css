@@ -25,7 +25,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  animation: spinnerEffect 5s linear infinite;
+  animation: spinnerEffect 7s linear infinite;
 }
 
 main div {
@@ -36,43 +36,51 @@ main div {
 }
 
 main div:nth-child(1) {
-  border-color: red;
+  background-color: red;
   position: absolute;
 
   top: 120px;
   left: 120px;
 
-  animation: upDownEffect 2s linear infinite;
+  z-index: 1;
+
+  transform: translateX(10%)
 }
 
 main div:nth-child(2) {
-  border-color: yellow;
+  background-color: yellow;
   position: absolute;
 
   top: 200px;
   left: 120px;
 
-  animation: upDownEffect 4s linear infinite;
+  z-index: 2;
+
+  transform: translateY(-10%)
 }
 
 main div:nth-child(3) {
-  border-color: blue;
+  background-color: blue;
   position: absolute;
 
   top: 200px;
   left: 200px;
 
-  animation: upDownEffect 6s linear infinite;
+  z-index: 1;
+
+  transform: translateX(-10%)
 }
 
 main div:nth-child(4) {
-  border-color: green;
+  background-color: green;
   position: absolute;
 
   top: 120px;
   left: 200px;
 
-  animation: upDownEffect 8s linear infinite;
+  z-index: 2;
+
+  transform: translateY(10%)
 }
 
 @keyframes spinnerEffect {
